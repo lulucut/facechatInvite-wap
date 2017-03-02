@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>简讯邀请</title>
+	<link rel="stylesheet" href="css/wap.css" />
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+	<section class="invite-page">
+		<section class="con-wrap">
+			<div class="img-wrap">
+				<div class="img-item show-img" style="display:block">
+					<img src="images/test/1.jpg" />
+				</div>
+				<div class="mod-animate-wrap">
+					<div class="mod-animate grate-animate" style="display:none">
+						<div class="img-item">
+							<img src="images/test/1.jpg" />
+						</div>
+						<div class="people-item">
+							<div class="a-icon bg-item"></div>
+							<div class="a-icon shadow-item"></div>
+							<i class="a-icon page-icon"></i>
+						</div>
+						<i class="a-icon grate-icon"></i>
+					</div>
+					<div class="mod-animate normal-animate" style="display: none ">
+						<div class="img-item">
+							<img src="images/test/2.jpg" />
+						</div>
+						<div class="txt-item">
+							<i class="icon a-icon txt-1"></i>
+							<i class="icon a-icon txt-2"></i>
+							<i class="icon a-icon txt-3"></i>
+							<i class="icon a-icon txt-4"></i>
+							<i class="icon a-icon txt-5"></i>
+							<i class="icon a-icon txt-6"></i>
+						</div>
+						<div class="people-item">
+							<i class="icon a-icon people-1"></i>
+							<i class="icon a-icon people-2"></i>
+							<i class="icon a-icon people-3"></i>
+							<i class="icon a-icon people-4"></i>
+							<i class="icon a-icon people-5"></i>
+							<i class="icon a-icon people-6"></i>
+							<i class="icon a-icon people-7"></i>
+							<i class="icon a-icon people-8"></i>
+							<i class="icon a-icon people-9"></i>
+							<i class="icon a-icon people-10"></i>
+							<i class="icon a-icon people-11"></i>
+							<i class="icon a-icon people-12"></i>
+						</div>
+					</div>
+					<div class="mod-animate high-animate" style="display:none">
+						<div class="img-item">
+							<img src="images/test/3.jpg" />
+						</div>
+						<div class="light-item">
+							<ul>
+								<li class="red">
+									<i class="a-icon light-icon"></i>
+									<i class="a-icon point-icon"></i>
+									<i class="a-icon fire-icon"></i>
+								</li>
+								<li class="blue">
+									<i class="a-icon light-icon"></i>
+									<i class="a-icon point-icon"></i>
+									<i class="a-icon fire-icon"></i>
+								</li>
+								<li class="green">
+									<i class="a-icon light-icon"></i>
+									<i class="a-icon point-icon"></i>
+									<i class="a-icon fire-icon"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="a-icon bg-item"></div>
+						<div class="time-item">
+							<div class="txt-item">
+								<i class="icon a-icon txt-1"></i>
+								<i class="icon a-icon txt-2"></i>
+								<i class="icon a-icon txt-3"></i>
+							</div>
+							<i class="a-icon people-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="phone-bg"></div>
+			</div>
+			<div class="text-wrap">
+				<dl class="text-item">
+					<dt class="title">Henry</dt>
+					<dd class="info-item">我在简讯等你“聊”,快快出招</dd>
+					<dd class="invite-item">邀请号:<span class="num">as2999</span></dd>
+				</dl>
+				<div class="btn-item">
+					<a href="#" class="btn join-btn"></a>
+				</div>
+				<div class="tips">
+					搜索邀请号<span class="num">as2999</span>加我为好友
+				</div>
+			</div>
+			<!-- 摇一摇 -->
+			<div class="mod-shake-item" style="display:none">
+				<i class="icon"></i>
+			</div>
+		</section>
+		<!-- 下载栏 -->
+		<section class="mod-download-item">
+			<i class="logo-icon"></i>
+			<dl class="text-item">
+				<dt class="title"></dt>
+				<dd class="info">一款真人表情聊天神器</dd>
+			</dl>
+			<div class="btn-item">
+				<a href="#" class="btn">
+					<i class="icon download-icon"></i>
+					<em>下载简讯</em>
+				</a>
+			</div>
+		</section>
+	</section>
+	<script src="js/zepto.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var stepAnimate = function(){
+				function step1() {
+					$(".mod-shake-item").show();
+					$(".grate-animate").hide();
+					$(".normal-animate").hide();
+					$(".high-animate").hide();
+					$(".show-img").show();
+				}
+				function step2() {
+					$(".mod-shake-item").hide();
+					$(".grate-animate").show();
+					$(".normal-animate").hide();
+					$(".high-animate").hide();
+					$(".show-img").hide();
+				}
+				function step3() {
+					$(".mod-shake-item").hide();
+					$(".grate-animate").hide();
+					$(".normal-animate").show();
+					$(".high-animate").hide();
+					$(".show-img").hide();
+				}
+				function step4() {
+					$(".mod-shake-item").hide();
+					$(".grate-animate").hide();
+					$(".normal-animate").hide();
+					$(".high-animate").show();
+					$(".show-img").hide();
+				}
+				var step1 = setTimeout(step1,0);
+				var step2 = setTimeout(step2,2000);
+				var step3 = setTimeout(step3,12000);
+				var step4 = setTimeout(step4,15200);
+				setTimeout(stepAnimate, 21300);
+			}
+			stepAnimate();	
+		}); 
+	</script> 
+</body>
+</html>
